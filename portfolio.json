@@ -1,0 +1,40 @@
+{
+  "project_id": "PRJ-025",
+  "slug": "image-converter",
+  "title": "Image Converter",
+  "category": "Portfolio Tool",
+  "tech_stack": "React, Vite, Node.js, Express, ImageMagick",
+  "summary": "Batch image conversion tool with a premium drag-and-drop interface powered by ImageMagick.",
+  "status": "active",
+  "preview_dir": "dist",
+  "preview_entry": "index.html",
+  "build_command": "npm install && npm run build",
+  "run_commands": [
+    "npm run dev",
+    "npm run build"
+  ],
+  "highlights": [
+    "Processes single or batch image format conversions.",
+    "Powered by ImageMagick running on a local Express API.",
+    "Modern, glassmorphic UI using vanilla CSS.",
+    "Automatically archives batch results into ZIP files."
+  ],
+  "services": [
+    {
+      "slug": "web",
+      "label": "Image Converter UI",
+      "command": "npm run dev:frontend -- --host 127.0.0.1 --port 5214",
+      "open_url": "http://127.0.0.1:5214",
+      "health_url": "http://127.0.0.1:5214",
+      "description": "Runs the React frontend interface."
+    },
+    {
+      "slug": "api",
+      "label": "Image Converter API",
+      "command": "node server.js",
+      "open_url": "http://127.0.0.1:3001",
+      "health_url": "http://127.0.0.1:3001/api/health",
+      "description": "Runs the Express backend API and ImageMagick process."
+    }
+  ]
+}
