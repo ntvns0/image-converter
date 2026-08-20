@@ -2,6 +2,7 @@
   "project_id": "PRJ-025",
   "slug": "image-converter",
   "title": "Image Converter",
+  "repo_url": "https://github.com/ntvns0/image-converter",
   "category": "Portfolio Tool",
   "tech_stack": "React, Vite, Node.js, Express, ImageMagick",
   "summary": "Batch image conversion tool with a premium drag-and-drop interface powered by ImageMagick.",
